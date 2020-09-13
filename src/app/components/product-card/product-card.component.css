@@ -1,0 +1,43 @@
+.cards-container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 300px;
+  max-height: 500px;
+}
+img{
+  width:100%;
+  height:auto;
+  max-height: 400px;
+  overflow: hidden;
+}
+.card-title{
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+  line-height: 2rem;
+}
+.card-footer{
+  display:flex;
+  justify-content: space-between;
+  color: var(--color-text-secondary);
+}
+.availability{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.availability mat-icon{
+  margin-right:5px;
+}
+.price{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.card-details{
+  margin-top: 2rem;
+  width:100%;
+  border-radius: 20px;
+}

@@ -1,0 +1,11 @@
+.products-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-weight: bolder;
+  font-size: 2rem;
+  padding:2rem;
+}

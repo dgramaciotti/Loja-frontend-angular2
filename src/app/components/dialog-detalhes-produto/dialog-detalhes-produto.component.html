@@ -1,0 +1,16 @@
+<div class="modal-container">
+    <div class="left-content">
+      <img (click)="handleCarrousel()" src="assets/database/img/produtos/{{currentImg}}" alt={{currentImg}}/>
+      <div class="modal-rating">
+        <span>Nota: {{data.nota || 'S/A'}}</span>
+        <mat-icon>star</mat-icon>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="text-content">
+        <div class="modal-title">{{data.produto.nome}}</div>
+        <p class="modal-text">{{text}}</p>
+       </div>
+      <button color="primary" mat-raised-button>ACTION</button>
+    </div>
+</div>

@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face{
+  font-family: Daxline Pro;
+  src: url('assets/fonts/DaxlinePro-Regular_13131.ttf');
+}
+
+@font-face{
+  font-family: Daxline Pro;
+  src: url('assets/fonts/DaxlinePro-Bold_13127.ttf');
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: Daxline Pro;
+  src: url('assets/fonts/DaxlinePro-ExtraBold_13128.ttf');
+  font-weight: bolder;
+}
+:root{
+  --color-text-secondary: #808184;
+  --color-text-primary: #3F3F41;
+}
+
+*{
+  font-family: 'Daxline Pro';
+}
+body{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  padding:0;
+}
+
+app-root{
+  width:100vw;
+  height: 100vh;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

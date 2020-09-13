@@ -1,0 +1,55 @@
+.filter-container{
+  padding: 2rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-container .filter-options{
+  display:flex;
+  align-items: center;
+}
+.filter-container button{
+  margin-left: 2rem;
+}
+.filter-text{
+  margin-right: 2rem;
+}
+mat-form-field{
+  margin-left:2rem;
+}
+
+@media(max-width:800px){
+  .filter-container{
+    flex-direction: column;
+  }
+  .filter-options{
+    display:grid !important;
+    grid-template-areas:
+    "price"
+    "category"
+    "available"
+    "button"
+    ;
+  }
+  #category{
+    grid-area: category;
+  }
+  #available{
+    grid-area: available;
+  }
+  #price{
+    grid-area: price;
+  }
+  #button{
+    grid-area: button;
+    margin-top: 1.5rem;
+    margin-left:0;
+    width:100%;
+  }
+  mat-form-field{
+    margin-left: 0;
+  }
+  .filter-text{
+    display:none;
+  }
+}

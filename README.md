@@ -1,27 +1,25 @@
 # LojaVirtual
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+## Utilização
 
-## Development server
+Primeiro instale todas as dependências utilizando o comando npm install na pasta raiz. Depois utilize o comando **ng serve** em um terminal na pasta root deste projeto. O app será iniciado na url
+http://localhost:4200
+Obs: É necessário ter a Angular CLI (https://cli.angular.io/) instalada via npm na máquina.
+Mais orientações na URL: https://angular.io/cli
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Sobre
 
-## Code scaffolding
+### Design
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Foi utilizado HTML/CSS puro em conjunto com componentes da Material UI, como o Dialog box e botões.
 
-## Build
+### Código
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Foram utilizadas ferramentas básicas como Http, input, output, event listeners, Pipes, etc. Devido ao tempo curto para realização, não foram implementadas as seguintes funcionalidades (ainda assim importantes):
+- Testes unitários;
+- Refinamento do design;
+- Adicionados textos de descrição dos produtos para a database em Json;
+- Responsividade plena para mobile (diálogo nao foi adaptado);
+- Carrosel de imagens com botões do lado ( foi implementada a funcionalidade clicando diretamente na imagem, é preciso realizar uma expansão da funcionalidade)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+De forma geral o esqueleto de código e Interação está pronto, porém o design precisa de mais atenção.

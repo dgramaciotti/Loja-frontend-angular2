@@ -1,0 +1,36 @@
+.modal-container{
+  display:flex;
+}
+.right-content{
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-title{
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+.modal-rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+button{
+  width:100%;
+  max-width: 200px;
+}
+
+img{
+  display:block;
+  max-width: 400px;
+  max-height: 400px;
+  cursor: pointer;
+}
+img:hover{
+  opacity: 0.8;
+}

@@ -1,0 +1,17 @@
+<div class="cards-container">
+  <img src="assets/database/img/produtos/{{selectHighlightedImage()}}" alt={{selectHighlightedImage()}}/>
+  <p class="card-title">{{produto.nome}}</p>
+  <app-star-rating [nota]="nota"></app-star-rating>
+  <div class="card-footer">
+    <div class="price">{{produto.categoria}} - ${{produto.precoMedio}}</div>
+    <span class="availability" *ngIf="produto.disponivel">
+      <mat-icon>check</mat-icon>
+      <span>Disponível</span>
+    </span>
+    <span class="availability" *ngIf="!produto.disponivel">
+      <mat-icon>block</mat-icon>
+      <span>Indisponível</span>
+    </span>
+  </div>
+  <button mat-raised-button color="primary" (click)="openDialog()" class="card-details">DETALHES</button>
+</div>

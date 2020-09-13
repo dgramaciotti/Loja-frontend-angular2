@@ -1,0 +1,19 @@
+<div class="filter-container">
+  <div class="filter-options">
+    <div class="filter-text">Filtrar por:</div>
+    <mat-checkbox id="available" (change)="checkboxHandler()" [(checked)]="checked">Disponível</mat-checkbox>
+    <mat-form-field id="price">
+      <mat-label>Preço</mat-label>
+      <mat-select (closed)="sendFilterInfo()" [(value)]="selectedPreco">
+        <mat-option value={{preco}} *ngFor="let preco of precos">{{preco}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field id="category">
+      <mat-label>Categorias</mat-label>
+      <mat-select (closed)="sendFilterInfo()" [(value)]="selectedCategoria">
+        <mat-option value={{categoria}} *ngFor="let categoria of categorias">{{categoria}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button (click)="cleanFilter()" id="button" mat-raised-button color="primary">LIMPAR</button>
+  </div>
+</div>
